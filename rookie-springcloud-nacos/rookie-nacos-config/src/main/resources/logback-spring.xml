@@ -211,7 +211,7 @@
     <springProfile name="dev,uat">
         <logger name="org.springframework.web" level="DEBUG"/>
         <logger name="com.rookie.bigdata" level="DEBUG"/>
-
+        <logger name="com.alibaba.cloud.nacos.configdata" level="ERROR"/>
         <root level="DEBUG">
             <appender-ref ref="CONSOLE"/>
             <appender-ref ref="DEBUG_FILE"/>

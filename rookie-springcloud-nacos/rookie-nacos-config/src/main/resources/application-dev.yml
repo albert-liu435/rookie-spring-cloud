@@ -1,23 +1,26 @@
-#
-#spring:
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    #    url: jdbc:mysql://localhost:3306/oasys?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-#    url: jdbc:mysql://localhost:3306/db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-#    username: root
-#    password: root
-#    type: com.zaxxer.hikari.HikariDataSource
-#    hikari:
-#      pool-name: HikariCP
-#      minimum-idle: 10
-#      idle-timeout: 1000
-#      maximum-pool-size: 20
-#mybatis:
-##  config-location: classpath:mybatis-config.xml
-#  mapper-locations: classpath:mapper/*.xml
-#  ##目的是为了省略resultType里的代码量
-#  type-aliases-package: com.rookie.bigdata.domain
-#  #configuration:
-#  #  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-#
-#
+server:
+  port: 18084
+
+spring:
+  application:
+    name: rookie-nacos-config
+  cloud:
+    nacos:
+      config:
+        serverAddr: 81.70.241.167:8848
+        username: 'nacos'
+        password: 'nacos123'
+  config:
+    import:
+      - nacos:nacos-config-example.properties?refreshEnabled=true
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#logging:
+#  level:
+#    com.alibaba.cloud.nacos.configdata: debug
