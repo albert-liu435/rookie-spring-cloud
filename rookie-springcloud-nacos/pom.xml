@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
-    <artifactId>rookie-springcloud-alibaba</artifactId>
+    <artifactId>rookie-springcloud-nacos</artifactId>
 
 
     <properties>
@@ -25,7 +25,7 @@
     </properties>
 
     <modules>
-        <module>rookie-springboot-junit5</module>
+        <module>rookie-nacos-config</module>
     </modules>
 
 
