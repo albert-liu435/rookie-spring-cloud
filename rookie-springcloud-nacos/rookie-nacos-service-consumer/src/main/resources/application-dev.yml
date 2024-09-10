@@ -1,0 +1,23 @@
+server:
+  port: 18086
+
+spring:
+  application:
+    name: rookie-service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 81.70.241.167:8848
+        fail-fast: true
+      username: 'nacos'
+      password: 'nacos123'
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+

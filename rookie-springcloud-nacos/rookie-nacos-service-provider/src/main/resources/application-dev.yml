@@ -1,0 +1,32 @@
+server:
+  port: 18085
+
+spring:
+  application:
+    name: rookie-service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 81.70.241.167:8848
+      username: 'nacos'
+      password: 'nacos123'
+#  cloud:
+#    nacos:
+#      config:
+#        serverAddr: 81.70.241.167:8848
+#        username: 'nacos'
+#        password: 'nacos123'
+#  config:
+#    import:
+#      - nacos:nacos-config-example.properties?refreshEnabled=true
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#logging:
+#  level:
+#    com.alibaba.cloud.nacos.configdata: debug

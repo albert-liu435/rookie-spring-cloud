@@ -26,6 +26,8 @@
 
     <modules>
         <module>rookie-nacos-config</module>
+        <module>rookie-nacos-service-consumer</module>
+        <module>rookie-nacos-service-provider</module>
     </modules>
 
 
