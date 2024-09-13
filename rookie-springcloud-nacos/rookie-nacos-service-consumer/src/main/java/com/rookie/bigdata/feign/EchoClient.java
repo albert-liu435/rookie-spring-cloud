@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  *
  * @author fangjian0423, MieAh
  */
-@FeignClient(name = "service-provider", contextId = "service-provider")
+@FeignClient(name = "rookie-service-provider", contextId = "rookie-service-provider")
 public interface EchoClient {
 
     /**

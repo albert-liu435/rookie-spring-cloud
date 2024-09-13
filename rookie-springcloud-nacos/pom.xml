@@ -22,6 +22,8 @@
         <spring-cloud.version>2023.0.1</spring-cloud.version>
         <!-- Spring Cloud Alibaba版本号 -->
         <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
+
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     </properties>
 
     <modules>
@@ -76,4 +78,14 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -21,19 +21,13 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-
-        <!--        <spring.boot.version>3.2.4</spring.boot.version>-->
-
         <hutool.version>5.8.24</hutool.version>
-        <!--        <fast2.version>2.0.52</fast2.version>-->
-        <!--        <commons.lang3.version>3.14.0</commons.lang3.version>-->
-        <!--        <commons-lang.version>2.6</commons-lang.version>-->
 
     </properties>
 
 
-    <dependencyManagement>
-        <dependencies>
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
             <!--            <dependency>-->
             <!--                <groupId>org.springframework.boot</groupId>-->
             <!--                <artifactId>spring-boot-dependencies</artifactId>-->
@@ -109,13 +103,13 @@
             <!--                <version>3.16.0</version>-->
             <!--            </dependency>-->
 
-        </dependencies>
+<!--        </dependencies>-->
 
-    </dependencyManagement>
+<!--    </dependencyManagement>-->
 
-    <dependencies>
+<!--    <dependencies>-->
 
-    </dependencies>
+<!--    </dependencies>-->
     <build>
         <plugins>
             <plugin>

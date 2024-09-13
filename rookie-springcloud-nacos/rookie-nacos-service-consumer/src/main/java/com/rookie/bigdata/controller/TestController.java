@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @Class TestController
- * @Description TODO
+ * @Description
  * @Author rookie
  * @Date 2024/9/10 17:50
  * @Version 1.0
@@ -31,10 +31,10 @@ public class TestController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    private static final String SERVICE_PROVIDER_ADDRESS = "http://service-provider";
+    private static final String SERVICE_PROVIDER_ADDRESS = "http://rookie-service-provider";
 
     @GetMapping("/echo-rest/{str}")
-    public String rest(@PathVariable String str) {
+    public String rest(@PathVariable(value = "str") String str) {
         return urlCleanedRestTemplate
                 .getForObject(SERVICE_PROVIDER_ADDRESS + "/echo/" + str,
                         String.class);
@@ -73,12 +73,12 @@ public class TestController {
     }
 
     @GetMapping("/echo-feign/{str}")
-    public String feign(@PathVariable String str) {
+    public String feign(@PathVariable(value = "str") String str) {
         return echoClient.echo(str);
     }
 
     @GetMapping("/services/{service}")
-    public Object client(@PathVariable String service) {
+    public Object client(@PathVariable(value = "service") String service) {
         return discoveryClient.getInstances(service);
     }
 
