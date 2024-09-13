@@ -1,0 +1,8 @@
+seata:
+https://seata.apache.org/zh-cn/docs/overview/faq
+nacos:
+https://nacos.io/docs/latest/what-is-nacos/
+Sentinel:
+https://sentinelguard.io/zh-cn/docs/introduction.html
+rocketMQ:
+https://rocketmq.apache.org/zh/docs/quickStart/01quickstart
