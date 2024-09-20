@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rookie-springboot-junit5</artifactId>
+    <artifactId>rookie-customer-gateway</artifactId>
 
     <name>rookie-springboot-junit5</name>
     <!--  change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>rookie-customer-gateway</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,12 +23,6 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-      <!--      <version>2023.0.1.0</version>-->
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,11 +34,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-webflux</artifactId>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
 
     </dependencies>
 
@@ -72,6 +66,5 @@
             <!--            </plugin>-->
         </plugins>
     </build>
-
 
 </project>

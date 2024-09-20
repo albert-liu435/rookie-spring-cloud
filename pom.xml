@@ -11,6 +11,7 @@
 
     <modules>
         <module>rookie-springcloud-alibaba</module>
+        <module>rookie-springcloud-gateway</module>
         <module>rookie-springcloud-loadbalancer</module>
         <module>rookie-springcloud-nacos</module>
     </modules>
