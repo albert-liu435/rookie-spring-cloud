@@ -5,3 +5,8 @@ rookie-springcloud-nacos/rookie-nacos-config
 1、请求示例：
 http://127.0.0.1:18084/nacos/bean
 
+
+
+
+
+

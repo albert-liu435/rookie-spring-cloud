@@ -13,5 +13,6 @@
 
     <modules>
             <module>rookie-nacos-config</module>
+        <module>rookie-nacos-discovery-provider</module>
     </modules>
 </project>
