@@ -9,5 +9,5 @@ sh startup.sh -m standalone
         http://81.70.241.167:8848/nacos
         输入账号和密码即可
 2   Open API鉴权
-    curl -X POST '127.0.0.1:8848/nacos/v1/auth/login' -d 'username=nacos&password=nacos'
+    curl -X POST '127.0.0.1:8848/nacos/v1/auth/login' -d 'username=nacos&password=nacos_123'
 

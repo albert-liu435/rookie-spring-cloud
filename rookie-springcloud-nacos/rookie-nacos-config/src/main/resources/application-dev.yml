@@ -7,11 +7,12 @@ spring:
   cloud:
     nacos:
       config:
-        serverAddr: 81.70.241.167:8848
+        serverAddr: 101.43.142.12:8848
         username: 'nacos'
-        password: 'nacos123'
+        password: 'nacos_123'
   config:
     import:
+#      - optional:nacos:nacos-config-example.properties?refreshEnabled=true
       - nacos:nacos-config-example.properties?refreshEnabled=true
 management:
   endpoint:
