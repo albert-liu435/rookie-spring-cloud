@@ -12,7 +12,10 @@
     <artifactId>rookie-springcloud-nacos</artifactId>
 
     <modules>
-            <module>rookie-nacos-config</module>
+        <module>rookie-nacos-config</module>
         <module>rookie-nacos-discovery-provider</module>
+
+        <module>rookie-nacos-gateway-discovery</module>
+        <module>rookie-nacos-gateway-provider</module>
     </modules>
 </project>
