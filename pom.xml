@@ -10,9 +10,10 @@
     <version>1.0.0</version>
 
     <modules>
+        <module>rookie-cloud</module>
 <!--        <module>rookie-springcloud-alibaba</module>-->
 <!--        <module>rookie-springcloud-gateway</module>-->
-<!--        <module>rookie-springcloud-loadbalancer</module>-->
+        <module>rookie-springcloud-loadbalancer</module>
         <module>rookie-springcloud-nacos</module>
     </modules>
 
