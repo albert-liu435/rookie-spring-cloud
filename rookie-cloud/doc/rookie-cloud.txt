@@ -1,0 +1,2 @@
+version 1.0
+请求：http://127.0.0.1:18085/nacos/echo/hello-world

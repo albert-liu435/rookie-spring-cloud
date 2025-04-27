@@ -13,6 +13,7 @@
 
     <modules>
         <module>rookie-cloud-gateway</module>
+        <module>rookie-cloud-userservice</module>
 <!--        <module>rookie-loadbalancer-hello</module>-->
 <!--        <module>rookie-nacos-discovery-provider</module>-->
 <!--        <module>rookie-loadbalancer-resttemplate</module>-->
