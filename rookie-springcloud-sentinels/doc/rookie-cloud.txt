@@ -1,0 +1,15 @@
+文档地址：https://github.com/alibaba/spring-cloud-alibaba/blob/2023.x/spring-cloud-alibaba-examples/sentinel-example/README-zh.md
+
+1、启动sentinel
+然后访问地址：http://localhost:8080/  输入账号和密码 分别为sentinel/sentinel
+
+2、启动rookie-sentinel-core服务后输入地址进行测试
+然后输入请求：http://localhost:18083/hello
+http://localhost:18083/test
+
+2、nacos中处理sentinel   项目 rookie-sentinel-nacos
+在nacos的配置列表中添加  flowrule.json  json格式的数据，数据参考rookie-sentinel-nacos中文件flowrule.json中的数据
+
+然后访问http://localhost:18083/hello进行测试
+
+

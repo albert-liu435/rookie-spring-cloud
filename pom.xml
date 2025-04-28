@@ -17,6 +17,7 @@
         <module>rookie-springcloud-nacos</module>
 
         <module>rookie-springcloud-openfeign</module>
+        <module>rookie-springcloud-sentinels</module>
     </modules>
 
 
