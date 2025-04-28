@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rookie-cloud-userservice</artifactId>
+    <artifactId>rookie-openfeign-service</artifactId>
 
-    <name>rookie-cloud-userservice</name>
+    <name>rookie-openfeign-service</name>
     <!--  change it to the project's website -->
     <url>http://www.example.com</url>
 
