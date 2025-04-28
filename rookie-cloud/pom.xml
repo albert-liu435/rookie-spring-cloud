@@ -12,7 +12,11 @@
     <artifactId>rookie-cloud</artifactId>
 
     <modules>
-        <module>rookie-cloud-gateway</module>
+
+        <module>rookie-account-service</module>
+        <module>rookie-order-service</module>
+
+        <module>rookie-gateway</module>
         <module>rookie-cloud-userservice</module>
 <!--        <module>rookie-loadbalancer-hello</module>-->
 <!--        <module>rookie-nacos-discovery-provider</module>-->

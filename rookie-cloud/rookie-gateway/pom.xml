@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rookie-cloud-gateway</artifactId>
+    <artifactId>rookie-gateway</artifactId>
 
-    <name>rookie-cloud-gateway</name>
+    <name>rookie-gateway</name>
     <!--  change it to the project's website -->
     <url>http://www.example.com</url>
 
