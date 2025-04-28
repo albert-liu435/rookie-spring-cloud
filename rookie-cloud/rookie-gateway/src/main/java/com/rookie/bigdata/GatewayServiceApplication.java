@@ -3,8 +3,6 @@ package com.rookie.bigdata;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
-import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClients;
 
 /**
  * @ClassName CloudGatewayApplication
@@ -18,9 +16,9 @@ import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClients;
 //@LoadBalancerClients({
 //        @LoadBalancerClient("rookie-cloud-userservice")
 //})
-public class CloudGatewayApplication {
+public class GatewayServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudGatewayApplication.class, args);
+        SpringApplication.run(GatewayServiceApplication.class, args);
     }
 }

@@ -1,13 +1,15 @@
 server:
-  port: 18082
+  port: 18081
 spring:
   application:
-    name: rookie-cloud-userservice
+    name: rookie-feign-service
   cloud:
     nacos:
       discovery:
         server-addr: 101.43.142.12:8848
         enabled: true
+        namespace: rookie-cloud
+        
       username: nacos
       password: nacos_123
 management:

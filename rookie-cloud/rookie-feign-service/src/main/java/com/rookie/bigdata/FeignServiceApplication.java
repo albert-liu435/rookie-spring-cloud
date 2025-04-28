@@ -13,9 +13,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CloudUserServiceApplication {
+public class FeignServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudUserServiceApplication.class, args);
+        SpringApplication.run(FeignServiceApplication.class, args);
     }
 }

@@ -17,10 +17,8 @@
         <module>rookie-order-service</module>
 
         <module>rookie-gateway</module>
-        <module>rookie-openfeign-service</module>
-<!--        <module>rookie-loadbalancer-hello</module>-->
-<!--        <module>rookie-nacos-discovery-provider</module>-->
-<!--        <module>rookie-loadbalancer-resttemplate</module>-->
-<!--        <module>rookie-loadbalancer-webclient</module>-->
+
+        <module>rookie-feign-service</module>
+
     </modules>
 </project>

@@ -1,23 +1,30 @@
 server:
-  port: 18085
+  port: 18080
 
 spring:
   application:
-    name: rookie-cloud-gateway
+    name: rookie-gateway
   cloud:
     nacos:
       discovery:
         server-addr: 101.43.142.12:8848
+        namespace: rookie-cloud
       username: nacos
       password: nacos_123
     gateway:
       routes:
-        - id: nacos-route
-          uri: lb://rookie-cloud-userservice
+        - id: rookie-feign-service
+          uri: lb://rookie-feign-service
           predicates:
             - Path=/nacos/**
           filters:
             - StripPrefix=1
+#        - id: nacos-route
+#          uri: lb://rookie-cloud-userservice
+#          predicates:
+#            - Path=/nacos/**
+#          filters:
+#            - StripPrefix=1
 management:
   endpoints:
     web:
