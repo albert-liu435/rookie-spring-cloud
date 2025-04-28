@@ -1,0 +1,15 @@
+# 请求信息
+http://localhost:18085/demo/normal
+
+
+http://localhost:18085/demo/singleParam?username=abc
+
+
+
+http://localhost:18085/demo/jsonParam
+
+
+{
+    "username":"abc",
+    "password":"abc"
+}

@@ -1,0 +1,45 @@
+server:
+  port: 18085
+
+spring:
+  application:
+    name: rookie-openfeign-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.43.142.12:8848
+      username: nacos
+      password: nacos_123
+    openfeign:
+      autoconfiguration:
+        jackson:
+          enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+## Feign配置
+#feign:
+#  #  compression: # 压缩设置（暂时不要开启，目前版本还有bug）
+#  #    request: # 请求压缩
+#  #      enabled: false # 是否启用。默认：false
+#  #      mime-types: # 支持的mime类型。示例即默认配置
+#  #        - "text/xml"
+#  #        - "application/xml"
+#  #        - "application/json"
+#  #      min-request-size: 2048 # 启用压缩的最小内容大小。
+#  #    response: # 响应压缩
+#  #      enabled: false # 是否启用。默认：false
+#  #      useGzipDecoder: false # 启用gzip解码器来解码gzip响应。默认false
+#  client:
+#    config:
+#      default: # feign客户端全局默认配置
+#        loggerLevel: FULL # 显示全部请求与返回信息，详见：feign.Logger.Level
+#        connectTimeout: 1000 # 连接超时时间，单位毫秒。默认：10000
+#        readTimeout: 3000 # 读取超时时间，单位毫秒。默认：60000
+#  autoconfiguration:
+#    jackson:
+#      enabled: true # Spring Data Support。默认：false
