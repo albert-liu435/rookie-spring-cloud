@@ -2,3 +2,10 @@ version 1.0.1
 
 服务：rookie-feign-service和rookie-gateway
 请求地址:http://127.0.0.1:18080/nacos/echo/hello-world
+
+
+
+version 1.0.2
+服务rookie-feign-service、rookie-gateway和rookie-account-service
+请求地址:http://127.0.0.1:18080/nacos/demo/normal
+请求地址:http://127.0.0.1:18081/demo/normal
