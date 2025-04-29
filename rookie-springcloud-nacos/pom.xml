@@ -17,5 +17,8 @@
 
         <module>rookie-nacos-gateway-discovery</module>
         <module>rookie-nacos-gateway-provider</module>
+
+        <module>rookie-nacos-goods</module>
+        <module>rookie-nacos-user</module>
     </modules>
 </project>

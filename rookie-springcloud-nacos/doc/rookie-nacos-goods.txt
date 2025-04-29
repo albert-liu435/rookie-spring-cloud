@@ -1,0 +1,14 @@
+服务的注册与发现
+rookie-nacos-goods、rookie-nacos-user、nacos-2.4.3
+
+
+1、启动rookie-nacos-goods应用，然后访问地址
+http://localhost:18082/api/v1/goods/findByGoodsId?goodsId=10 接口看到接口正常返回
+服务配置中心
+在nacos中创建 nacos-goods.yml配置文件，然后添加users.name=rookie-cloud-goods，进行访问
+http://localhost:18082/api/v1/config/test-config
+
+
+2、服务发现
+
+http://localhost:18081/api/v1/user/find?goodsId=10

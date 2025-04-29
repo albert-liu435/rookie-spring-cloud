@@ -1,0 +1,48 @@
+server:
+  port: 18081
+spring:
+  application:
+    name: rookie-nacos-user
+  cloud:
+    nacos:
+      #服务注册与发现
+      discovery:
+        server-addr: 101.43.142.12:8848
+        enabled: true
+        namespace: rookie-cloud
+        group: rookie-dev
+      username: nacos
+      password: nacos_123
+#      # 配置中心
+#      config:
+#        server-addr: 101.43.142.12:8848
+#        namespace: rookie-cloud
+#        group: rookie-dev
+#        username: nacos
+#        password: nacos_123
+#  config:
+#    import:
+#      # nacos配置文件
+#      - optional:nacos:nacos-goods.yml?refreshEnabled=true
+
+
+#
+#Add a spring.config.import=nacos: property to your configuration.
+#  If configuration is not required add spring.config.import=optional:nacos: instead.
+#  To disable this check, set spring.cloud.nacos.config.import-check.enabled=false.
+
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/mall_goods?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: root
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: always
+
+
