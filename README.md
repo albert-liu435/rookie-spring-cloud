@@ -6,5 +6,5 @@ https://github.com/alibaba/spring-cloud-alibaba
 中的spring-cloud-alibaba-examples学习
 
 
-参考：nacos sentinel整合
+参考
 https://github.com/yudiandemingzi/spring-cloud-alibaba-study

@@ -15,9 +15,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @MapperScan("com.rookie.bigdata.dao")
-public class MallGoodsApplication {
+public class MallUserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallGoodsApplication.class, args);
+        SpringApplication.run(MallUserApplication.class, args);
     }
 }
