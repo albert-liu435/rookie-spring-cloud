@@ -32,3 +32,14 @@ sentinel参考文档：https://sentinelguard.io/zh-cn/docs/introduction.html
 将flowrule.json文件上传到nacos控制台,然后访问：http://localhost:6001/test-sentinel 访问次数超过1次，会限流
 
 
+## nacos服务集成gateway
+启动 rookie-mall-goods、rookie-mall-order、rookie-mall-gateway服务
+
+访问地址: http://localhost:8001/mall-goods/api/v1/config/test-config
+访问地址: http://localhost:8001/mall-order/api/v1/goods_order/getGoods?goodsId=1
+
+http://localhost:8001/mall-goods/api/v1/goods/findByGoodsId?goodsId=1
+
+
+
+

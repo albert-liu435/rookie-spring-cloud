@@ -13,6 +13,7 @@
 
     <modules>
         <module>rookie-mall-common</module>
+        <module>rookie-mall-gateway</module>
         <module>rookie-mall-goods</module>
         <module>rookie-mall-user</module>
         <module>rookie-mall-order</module>
