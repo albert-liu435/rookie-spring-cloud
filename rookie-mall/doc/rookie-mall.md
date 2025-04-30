@@ -44,6 +44,8 @@ http://localhost:8001/mall-goods/api/v1/goods/findByGoodsId?goodsId=1
 
 ## spring-cloud-sleuth迁移micrometer
 
+https://blog.csdn.net/liu320yj/article/details/136801589
+
 https://www.google.com/search?q=logback+%E6%95%B4%E5%90%88micrometer&rlz=1C1FKPE_en__1112__1112&oq=logback+%E6%95%B4%E5%90%88micrometer&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgIGB4yCggCEAAYgAQYogQyBwgDEAAY7wUyBwgEEAAY7wUyBwgFEAAY7wUyBwgGEAAY7wXSAQk1MjM5ajFqMTWoAgiwAgHxBYnOer0T-4f28QWJznq9E_uH9g&sourceid=chrome&ie=UTF-8
 
 

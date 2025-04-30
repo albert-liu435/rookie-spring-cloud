@@ -1,0 +1,8 @@
+https://blog.csdn.net/zhxdick/article/details/136092428
+https://github.com/HashJang/SpringOne-2023
+
+## 日志链路追踪
+启动 rookie-boot-micrometer
+请求地址：
+http://localhost:8080/hello2
+
