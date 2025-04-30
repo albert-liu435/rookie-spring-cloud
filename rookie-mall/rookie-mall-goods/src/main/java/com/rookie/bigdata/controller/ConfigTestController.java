@@ -18,8 +18,10 @@ public class ConfigTestController {
     /**
      * nacos获取配置
      */
-    @Value("${user.name}")
+    @Value("${users.name}")
     private String name;
+
+
 
     @RequestMapping("test-config")
     public Object findByGoodsId() {

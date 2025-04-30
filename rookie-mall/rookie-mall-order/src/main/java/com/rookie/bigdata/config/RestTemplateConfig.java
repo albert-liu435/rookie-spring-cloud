@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 //@LoadBalancerClient(name = "hello", configuration = HelloConfiguration.class)
 public class RestTemplateConfig {
 
-//    @LoadBalanced
+    @LoadBalanced
     @Bean
 //    WebClient.Builder webClientBuilder() {
 //        return WebClient.builder();
@@ -27,3 +27,4 @@ public class RestTemplateConfig {
     }
 
 }
+

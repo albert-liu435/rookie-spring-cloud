@@ -2,6 +2,7 @@ package com.rookie.bigdata.controller;
 
 import com.rookie.bigdata.domain.Goods;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -17,12 +18,32 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("api/v1/goods_order")
 public class OrderController {
 
+    @LoadBalanced
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * nacos服务的注册与发现
+     *
+     * @param goodsId
+     * @return
+     */
     @RequestMapping("getGoods")
     public Object getGoods(int goodsId) {
-        Goods goods = restTemplate.getForObject("http://localhost:6001/api/v1/goods/findByGoodsId?goodsId=" + goodsId, Goods.class);
-        return goods;
+//        Goods goods = restTemplate.getForObject("http://rookie-mall-goods/api/v1/goods/findByGoodsId?goodsId=" + goodsId, Goods.class);
+//        return goods;
+        return restTemplate.getForObject("http://rookie-mall-goods/api/v1/goods/findByGoodsId?goodsId=1",
+                Goods.class);
     }
+
+//    @RequestMapping("find")
+//    public Object findByGoods(int goodsId) {
+//        return restTemplate.getForObject("http://rookie-nacos-goods/api/v1/goods/findByGoodsId?goodsId=1000",
+//                Goods.class);
+//
+//    }
+
+
+
+
 }

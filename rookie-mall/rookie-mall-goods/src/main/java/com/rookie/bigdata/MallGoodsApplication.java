@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * @ClassName CloudUserServiceApplication
- * @Description CloudUserServiceApplication
+ * @ClassName MallGoodsApplication
+ * @Description MallGoodsApplication
  * @Author rookie
  * @Date 2021/6/17 11:32
  * @Version 1.0
