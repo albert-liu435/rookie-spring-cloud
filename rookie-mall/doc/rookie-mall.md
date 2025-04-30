@@ -42,4 +42,15 @@ http://localhost:8001/mall-goods/api/v1/goods/findByGoodsId?goodsId=1
 
 
 
+## spring-cloud-sleuth迁移micrometer
+
+https://www.google.com/search?q=logback+%E6%95%B4%E5%90%88micrometer&rlz=1C1FKPE_en__1112__1112&oq=logback+%E6%95%B4%E5%90%88micrometer&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgIGB4yCggCEAAYgAQYogQyBwgDEAAY7wUyBwgEEAAY7wUyBwgFEAAY7wUyBwgGEAAY7wXSAQk1MjM5ajFqMTWoAgiwAgHxBYnOer0T-4f28QWJznq9E_uH9g&sourceid=chrome&ie=UTF-8
+
+
+https://gitee.com/little-ali-of-peach/springcloud-demo
+
+- Migrate from Spring Cloud Sleuth to Micrometer Tracing .
+  You can check the Sleuth 3.1 Migration Guide over here [https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide].
+  If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
 
