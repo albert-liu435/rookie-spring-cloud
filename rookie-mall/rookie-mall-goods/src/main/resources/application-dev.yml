@@ -20,6 +20,15 @@ spring:
         group: mall-dev
         username: nacos
         password: nacos_123
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #sentinel控制台地址
+      datasource:
+        ds1:
+          file:
+            file: classpath:flowrule.json
+            data-type: json
+            rule-type: flow
   config:
     import:
       # nacos配置文件

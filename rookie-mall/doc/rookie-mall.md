@@ -21,3 +21,10 @@ users:
 请求地址：http://localhost:7001/api/v1/goods_order/getGoodsByFeign?goodsId=1
 请求地址：http://localhost:7001/api/v1/goods_order/getClusterName?goodsId=1
 
+
+## nacos服务集成sentinel
+sentinel参考文档：https://sentinelguard.io/zh-cn/docs/introduction.html
+下载并启动sentinel控制台
+启动 rookie-mall-goods服务
+请求地址：http://localhost:6001/test-sentinel
+
