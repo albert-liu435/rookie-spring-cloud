@@ -1,6 +1,7 @@
 package com.rookie.bigdata.controller;
 
 import com.rookie.bigdata.domain.Goods;
+import com.rookie.bigdata.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,10 @@ public class OrderController {
     @LoadBalanced
     @Autowired
     private RestTemplate restTemplate;
+
+
+    @Autowired
+    private GoodsService goodsService;
 
     /**
      * nacos服务的注册与发现
@@ -43,6 +48,27 @@ public class OrderController {
 //
 //    }
 
+
+
+    /**
+     * 通过Feign请求mall-goods服务
+     */
+    @RequestMapping("getGoodsByFeign")
+    public Object getGoodsByFeign(int goodsId) {
+        Goods goods = goodsService.findById(goodsId);
+        return goods;
+    }
+
+    /**
+     * 通过Feign请求mall-goods服务
+     */
+    @RequestMapping("getClusterName")
+    public Object findClusterName() {
+        for (int i = 0; i <10 ; i++) {
+            System.out.println(goodsService.findClusterName());
+        }
+        return "执行结束";
+    }
 
 
 

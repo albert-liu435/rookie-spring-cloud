@@ -2,6 +2,7 @@ package com.rookie.bigdata.controller;
 
 import com.rookie.bigdata.domain.Goods;
 import com.rookie.bigdata.service.GoodsService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +25,13 @@ public class GoodsController {
     public Object findByGoodsId(int goodsId) {
         Goods goods = goodsService.findById(goodsId);
         return goods;
+    }
+
+    @RequestMapping("findClusterName")
+    public Object findClusterName( HttpServletRequest request) {
+        //获取是哪个节点被请求
+        String clusterName = "当前服务器名称: " + request.getServerName()+";当前集群节点端口号: "+ request.getServerPort();
+        return clusterName;
     }
 
 }
