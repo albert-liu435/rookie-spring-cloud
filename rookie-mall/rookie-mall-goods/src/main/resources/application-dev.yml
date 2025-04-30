@@ -25,10 +25,19 @@ spring:
         dashboard: localhost:8080 #sentinel控制台地址
       datasource:
         ds1:
-          file:
-            file: classpath:flowrule.json
+          nacos:
+            server-addr: 101.43.142.12:8848
+            username: nacos
+            password: nacos_123
+            namespace: rookie-mall
+            groupId: mall-dev
+            data-id: flowrule.json
             data-type: json
             rule-type: flow
+#          file:
+#            file: classpath:flowrule.json
+#            data-type: json
+#            rule-type: flow
   config:
     import:
       # nacos配置文件

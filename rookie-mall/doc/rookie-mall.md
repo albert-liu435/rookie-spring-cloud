@@ -28,3 +28,6 @@ sentinel参考文档：https://sentinelguard.io/zh-cn/docs/introduction.html
 启动 rookie-mall-goods服务
 请求地址：http://localhost:6001/test-sentinel
 
+采用nacos进行配置
+将flowrule.json文件上传到nacos控制台,然后访问：http://localhost:6001/test-sentinel 访问次数超过1次，会限流
+
