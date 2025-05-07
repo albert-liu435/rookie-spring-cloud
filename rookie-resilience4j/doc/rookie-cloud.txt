@@ -1,1 +1,4 @@
 参考：https://blog.csdn.net/SHI940637335/article/details/141502418
+https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/index.md
+
+https://resilience4j.readme.io/docs/getting-started-3
