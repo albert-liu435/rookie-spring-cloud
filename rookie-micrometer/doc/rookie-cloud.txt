@@ -1,6 +1,12 @@
 https://blog.csdn.net/zhxdick/article/details/136092428
 https://github.com/HashJang/SpringOne-2023
 
+
+https://gitee.com/xgcAndMzl/trace_demo
+https://gitee.com/fireduck_admin/micrometer-demo
+
+https://github.com/lynxcat/micrometer-registry-nightingale
+
 ## 日志链路追踪
 启动 rookie-boot-micrometer
 请求地址：
