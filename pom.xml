@@ -13,6 +13,8 @@
         <module>rookie-cloud</module>
         <module>rookie-mall</module>
         <module>rookie-micrometer</module>
+        <module>rookie-resilience4j</module>
+
 <!--        <module>rookie-springcloud-alibaba</module>-->
 <!--        <module>rookie-springcloud-gateway</module>-->
         <module>rookie-springcloud-loadbalancer</module>
