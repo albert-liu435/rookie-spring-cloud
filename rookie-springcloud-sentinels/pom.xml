@@ -12,6 +12,7 @@
     <artifactId>rookie-springcloud-sentinels</artifactId>
 
     <modules>
+        <module>rookie-sentinel-boot</module>
         <module>rookie-sentinel-core</module>
         <module>rookie-sentinel-nacos</module>
     </modules>

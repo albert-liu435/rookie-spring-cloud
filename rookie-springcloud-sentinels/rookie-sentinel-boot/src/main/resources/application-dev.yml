@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: rookie-sentinel-boot #应用名称
+server:
+  port: 19966
